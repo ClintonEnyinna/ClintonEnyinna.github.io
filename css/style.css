@@ -183,9 +183,15 @@ nav a:hover {
 }
 
 .home-img {
-  background: url('../img/profile1.jpg') no-repeat center / cover;
+  background: #fff url('../img/profile.jpg') no-repeat center / cover;
   margin: auto;
   width: 400px;
   height: 400px;
   border-radius: 50%;
+  filter: grayscale(10%);
+  transition: 0.5s;
+}
+
+.home-img:hover {
+  transform: scale(1.03, 1.03);
 }

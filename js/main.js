@@ -16,6 +16,6 @@ window.onload = function() {
       i++;
       setTimeout(typeWriter, speed);
     }
-  }, 1500)()
+  }, 1500)
 
 }
