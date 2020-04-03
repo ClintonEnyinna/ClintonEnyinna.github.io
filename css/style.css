@@ -24,8 +24,18 @@ p {
 
 /** navbar **/
 
+.navbar {
+  position: fixed;
+  min-width: 90vw;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 nav {
   display: flex;
+  max-width: 1500px;
+  width: 100%;
+  margin: auto;
   padding: 34px 0 0;
   justify-content: space-between;
 }
@@ -123,11 +133,10 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  padding: 0 68px;
 }
 
 .intro {
-  height: calc(100vh - 56px);
+  height: calc(100vh);
   display: flex;
   align-items: center;
 }
