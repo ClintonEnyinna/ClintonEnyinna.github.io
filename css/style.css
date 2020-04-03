@@ -14,21 +14,19 @@ a {
   text-decoration: none;
 }
 
-ul {
+ul,
+p {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
 
-/** nav **/
-
-header {
-  padding: 34px 68px 0;
-}
+/** navbar **/
 
 nav {
   display: flex;
+  padding: 34px 0 0;
   justify-content: space-between;
 }
 
@@ -40,14 +38,20 @@ nav ul li {
   padding: 0 30px;
 }
 
+nav li:last-of-type {
+  padding-right: 0;
+}
+
 nav a {
   font-weight: bold;
   color: #ddd;
+  transition: 0.2s;
 }
 
 nav a:hover {
   border-bottom: 2px solid #00bfaa;
   color: white;
+  transition: 0.2s;
 }
 
 .contact {
@@ -55,6 +59,14 @@ nav a:hover {
   background-color: rgb(44, 55, 75);
   color: #fff;
   border-radius: 8px 8px 8px 0;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.contact:hover {
+  background-color: #00bfaa;
+  transition: 0.5s;
+  border: none;
 }
 
 
@@ -71,6 +83,11 @@ nav a:hover {
 
 .toggle input[type=checkbox] {
   display: none;
+}
+
+.toggle input[type=checkbox]:checked~.button {
+  left: 0;
+  transition: 0.5s;
 }
 
 .toggle .button,
@@ -92,7 +109,48 @@ nav a:hover {
   display: block;
   height: 20px;
   width: 20px;
+  left: 25px;
+  transition: 0.5s;
   border-radius: 50%;
   background-color: #fff;
   box-shadow: 0 0.9px 1.8px rgba(0, 0, 0, 0.4);
+}
+
+
+/** hero section **/
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 0 68px;
+}
+
+.intro {
+  height: calc(100vh - 56px);
+  display: flex;
+  align-items: center;
+}
+
+.intro p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.intro p:nth-of-type(2) {
+  height: 89px;
+  width: 550px;
+  font-weight: bold;
+  font-size: 32px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  color: white;
+}
+
+.intro p:last-of-type {
+  padding-bottom: 34px;
+  text-decoration: underline solid #00bfaa;
+}
+
+.intro span {
+  color: #00bfaa
 }
