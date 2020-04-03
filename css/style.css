@@ -147,7 +147,7 @@ nav a:hover {
 
 .intro p:nth-of-type(2) {
   height: 89px;
-  width: 550px;
+  max-width: 540px;
   font-weight: bold;
   font-size: 32px;
   padding-top: 10px;
@@ -163,3 +163,6 @@ nav a:hover {
 .intro span {
   color: #00bfaa
 }
+
+
+/** content animation **/
