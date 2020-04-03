@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+body {
+  max-width: 1500px;
+  width: 90vw;
+  margin: auto;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #20252D;
+}
+
+
+/** reset **/
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+/** nav **/
+
+header {
+  padding: 34px 68px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  padding: 0 30px;
+}
+
+nav a {
+  font-weight: bold;
+  color: #ddd;
+}
+
+nav a:hover {
+  border-bottom: 2px solid #00bfaa;
+  color: white;
+}
+
+.contact {
+  padding: 13px 30px;
+  background-color: rgb(44, 55, 75);
+  color: #fff;
+  border-radius: 8px 8px 8px 0;
+}
+
+
+/** dark mode **/
+
+.toggle {
+  position: absolute;
+  display: inline-block;
+  width: 45px;
+  height: 20px;
+  top: 34px;
+  right: 35px;
+}
+
+.toggle input[type=checkbox] {
+  display: none;
+}
+
+.toggle .button,
+.toggle .switch {
+  position: absolute;
+  cursor: pointer;
+}
+
+.toggle .switch {
+  display: block;
+  width: 45px;
+  height: 10px;
+  top: 5px;
+  background-color: #00bfaa;
+  border-radius: 5px;
+}
+
+.toggle .button {
+  display: block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0.9px 1.8px rgba(0, 0, 0, 0.4);
+}
