@@ -1,7 +1,7 @@
 window.onload = function() {
 
   let i = 0;
-  let speed = 70;
+  let speed = 60;
 
   let txt = 'I strive to create solution-driven applications.';
   let el = document.querySelector(".content");

@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+html {
+  min-height: 100vh;
+}
+
 body {
   max-width: 1500px;
   width: 90vw;
   margin: auto;
+  height: 100%;
   font-family: 'Open Sans', sans-serif;
   background-color: #20252D;
 }
@@ -88,7 +93,7 @@ nav a:hover {
   width: 45px;
   height: 20px;
   top: 34px;
-  right: 35px;
+  right: 0;
 }
 
 .toggle input[type=checkbox] {
@@ -135,9 +140,15 @@ nav a:hover {
   height: 100vh;
 }
 
-.intro {
-  height: calc(100vh);
+.main {
   display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.intro {
+  display: flex;
+  height: 100%;
   align-items: center;
 }
 
@@ -157,11 +168,10 @@ nav a:hover {
 }
 
 .intro p:nth-of-type(2) {
-  height: 89px;
   width: 540px;
   font-weight: bold;
   font-size: 32px;
-  padding-top: 10px;
+  margin-top: 10px;
   padding-bottom: 30px;
   color: white;
 }
@@ -172,18 +182,19 @@ nav a:hover {
 }
 
 .intro span {
-  color: #00bfaa
+  color: #00bfaa;
 }
 
 
 /** homepage image **/
 
 .intro .right {
+  position: relative;
   flex-grow: 1;
 }
 
 .home-img {
-  background: #fff url('../img/profile.jpg') no-repeat center / cover;
+  background: transparent url('../img/profile.jpg') no-repeat center / cover;
   margin: auto;
   width: 400px;
   height: 400px;
@@ -194,4 +205,91 @@ nav a:hover {
 
 .home-img:hover {
   transform: scale(1.03, 1.03);
+}
+
+
+/** watermark **/
+
+.watermark {
+  position: absolute;
+  background-color: rgb(44, 55, 75);
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+.circle1 {
+  width: 250px;
+  height: 250px;
+  left: 50%;
+  bottom: -15%;
+}
+
+.circle2 {
+  width: 200px;
+  height: 200px;
+  left: -50px;
+  bottom: 50%;
+}
+
+.circle3 {
+  width: 70px;
+  height: 70px;
+  right: 5%;
+  top: 20%;
+}
+
+
+/** socials **/
+
+.social {
+  display: flex;
+}
+
+.social li {
+  padding: 0 18px 63px;
+}
+
+
+/** scroll **/
+
+.scroll {
+  position: absolute;
+  width: 40px;
+  height: 60px;
+  background-color: #000;
+  top: calc(100vh - 103px);
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px
+}
+
+@media only screen and (max-width: 1100px) {
+  .intro {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .intro .greetings {
+    padding-top: 50px;
+  }
+  .intro .right {
+    order: -1;
+    flex-grow: 0;
+  }
+  .intro .left {
+    max-width: 100%;
+  }
+  .intro p:nth-of-type(2) {
+    width: 100%;
+  }
+  .home-img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .watermark {
+    display: none;
+  }
 }
