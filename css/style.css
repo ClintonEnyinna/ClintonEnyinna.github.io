@@ -19,10 +19,18 @@ a {
 
 body,
 ul,
-p {
+p,
+h4 {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+h4 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #00bfaa;
+  margin: 15px 0 30px;
 }
 
 
@@ -309,9 +317,43 @@ nav a:hover {
 /** about section **/
 
 .about {
+  display: flex;
+  align-items: center;
   height: 100vh;
   color: white;
   background-color: rgb(35, 40, 49);
+}
+
+.about .content {
+  display: flex;
+  align-items: center;
+  max-width: 1500px;
+  width: 90vw;
+  margin: auto;
+  height: 90%;
+}
+
+.about .left {
+  width: 40%;
+  height: 600px;
+}
+
+.about .right {
+  flex-basis: 60%;
+  padding-left: 70px;
+}
+
+.about p {
+  padding-bottom: 15px;
+  letter-spacing: 1px;
+  line-height: 1.4em;
+}
+
+.about-img {
+  background: url('../img/idea.jpeg') no-repeat center / cover;
+  width: 300px;
+  height: 600px;
+  border-radius: 0 10px 0 10px;
 }
 
 
@@ -338,6 +380,12 @@ nav a:hover {
   .home-img {
     width: 200px;
     height: 200px;
+  }
+  .about .content {
+    flex-direction: column;
+  }
+  .about .right {
+    padding-left: 0;
   }
 }
 
