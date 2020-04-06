@@ -144,6 +144,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   height: 100%;
+  padding-top: 97px;
 }
 
 .intro {
@@ -247,7 +248,7 @@ nav a:hover {
 }
 
 .social li {
-  padding: 0 18px 63px;
+  padding: 0 36px 68px 0;
 }
 
 
