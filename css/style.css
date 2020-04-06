@@ -365,7 +365,7 @@ nav a:hover {
     justify-content: center;
   }
   .intro .greetings {
-    padding-top: 50px;
+    padding-top: 30px;
   }
   .intro .right {
     order: -1;
@@ -393,5 +393,14 @@ nav a:hover {
   .scroll,
   .watermark {
     display: none;
+  }
+  .social li {
+    padding: 0 20px 15px 0;
+  }
+  .main {
+    padding-top: 50px;
+  }
+  .intro p:nth-of-type(2) {
+    font-size: 20px;
   }
 }
