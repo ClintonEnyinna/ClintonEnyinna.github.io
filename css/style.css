@@ -204,7 +204,7 @@ nav a:hover {
 
 .intro .right {
   position: relative;
-  /* flex-grow: 1; */
+  flex-grow: 1;
 }
 
 .home-img {
