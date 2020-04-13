@@ -86,7 +86,7 @@ nav a:hover {
   transition: 0.2s;
 }
 
-.contact {
+.contact-me {
   padding: 13px 30px;
   background-color: rgb(44, 55, 75);
   color: #fff;
@@ -95,7 +95,7 @@ nav a:hover {
   transition: 0.3s;
 }
 
-.contact:hover {
+.contact-me:hover {
   background-color: #00bfaa;
   transition: 0.5s;
   border: none;
@@ -483,6 +483,75 @@ article:nth-of-type(3) .project-img {
   color: rgba(255, 255, 255, 0.8);
 }
 
+/** contact **/
+.contact {
+  width: 90vw;
+  max-width: 1500px;
+  margin: auto;
+  padding: 50px 0;
+}
+.contact .header {
+  color: rgba(255, 255, 255, 0.8);
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+form {
+  width: 100%;
+  max-width: 746px;
+  margin: auto;
+}
+
+form .info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+form label {
+  width: 45%;
+  padding-bottom: 28px;
+}
+
+form input {
+  width: calc(100% - 10px);
+  border-radius: 12px;
+  background-color: #fff;
+  height: 40px;
+  padding-left: 10px;
+  border: none;
+  outline: none;
+}
+
+form textarea {
+  width: calc(100% - 13px);
+  padding-top: 10px;
+  padding-left: 10px;
+  border-radius: 0 12px;
+  margin-bottom: 28px;
+  border: none;
+  outline: none;
+}
+
+input[type="submit"] {
+  width: 40%;
+  background-color: rgb(44, 55, 75);
+  color: white;
+  font-size: 18px;
+  border-radius: 8px 8px 8px 0;
+  font-weight: bold;
+}
+
+/** footer **/
+
+footer {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
 /** responsive **/
 
 @media only screen and (max-width: 1100px) {
@@ -590,5 +659,17 @@ article:nth-of-type(3) .project-img {
   .skills .content {
     grid-template-columns: 1fr;
     gap: 5vw 0;
+  }
+
+  form input {
+    height: 40px;
+  }
+
+  form label {
+    padding-bottom: 20px;
+  }
+
+  form textarea {
+    margin-bottom: 20px;
   }
 }
