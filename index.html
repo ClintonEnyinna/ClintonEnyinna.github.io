@@ -210,28 +210,33 @@
         <h4>Get in Touch</h4>
         <p>
           Have a project in mind? I'll be glad to help bring that idea to life.
-          Let's discuss!
+          Feel free to contact me directly at
+          <span class="email">enyinnaclinton@gmail.com</span>
         </p>
       </div>
       <div class="content">
-        <form action="">
+        <form
+          action="mailto:enyinnaclinton@gmail.com"
+          method="post"
+          enctype="text/plain"
+        >
           <div class="info">
             <label for="firstName">
-              <input type="text" placeholder="First Name" />
+              <input type="text" name="firstName" placeholder="First Name" />
             </label>
-            <label for="firstName">
-              <input type="text" placeholder="Last Name" />
+            <label for="lastName">
+              <input type="text" name="lastName" placeholder="Last Name" />
             </label>
-            <label for="firstName">
-              <input type="text" placeholder="Email Address" />
+            <label for="email">
+              <input type="email" name="mail" placeholder="Email Address" />
             </label>
-            <label for="firstName">
-              <input type="text" placeholder="Subject" />
+            <label for="subject">
+              <input type="text" name="subject" placeholder="Subject" />
             </label>
           </div>
-          <label for="firstName">
+          <label for="content">
             <textarea
-              name=""
+              name="content"
               id=""
               cols="30"
               rows="10"
